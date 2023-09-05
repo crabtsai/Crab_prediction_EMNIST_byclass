@@ -15,6 +15,7 @@ from tensorflow.keras.models import model_from_json
 model = tf.keras.models.load_model('model.h5')
 st.title('Crab_英文字母大小寫及數字辨識')
 col1, col2 = st.columns(2)
+result = st.text_area()
 st.markdown(result)
 with col1:
     # Create a canvas component
