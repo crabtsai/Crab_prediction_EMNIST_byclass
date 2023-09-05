@@ -1,0 +1,9 @@
+numpy==1.22.4
+matplotlib==3.7.1
+seaborn==0.12.2
+torch==2.0.0+cu118
+torchvision
+tqdm
+scikit-learn==1.2.2
+streamlit_drawable_canvas
+Pillow # Note: "PIL" is actually accessed through the "Pillow" package on PyPI.
