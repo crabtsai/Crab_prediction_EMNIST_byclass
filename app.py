@@ -50,5 +50,5 @@ with col2:
             st.markdown('''<=36''')
         else:
             st.write('# ' + chr(ord('a')+predictions[0]))
-            st.markdown('''>36'''')
+            st.markdown('''>36''')
         st.image(image_resized)
