@@ -1,9 +1,6 @@
+streamlit
+streamlit-drawable-canvas
 numpy
-matplotlib
-seaborn
-torch
-torchvision
-tqdm
-scikit-learn
-streamlit_drawable_canvas
-Pillow # Note: "PIL" is actually accessed through the "Pillow" package on PyPI.
+tensorflow-cpu
+scikit-image
+
