@@ -44,9 +44,11 @@ with col2:
         predictions = np.argmax(model.predict(X1), axis=-1)
         if predictions[0] <= 10:
             st.write('# ' + chr(ord('0')+predictions[0]))
+            print('<=10')
         elif predictions[0] <= 36:
             st.write('# ' + chr(ord('A')+predictions[0]))
+            print('<=36')
         else:
             st.write('# ' + chr(ord('a')+predictions[0]))
-        print('預測結果:' + predictions[0])
+            print('>36')
         st.image(image_resized)
