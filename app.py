@@ -15,8 +15,6 @@ from tensorflow.keras.models import model_from_json
 model = tf.keras.models.load_model('model.h5')
 st.title('Crab_英文字母大小寫及數字辨識')
 col1, col2 = st.columns(2)
-result = st.text_area()
-st.markdown(result)
 with col1:
     # Create a canvas component
     canvas_result = st_canvas(
@@ -45,11 +43,11 @@ with col2:
         predictions = np.argmax(model.predict(X1), axis=-1)
         if predictions[0] <= 10:
             st.write('# ' + chr(ord('0')+predictions[0]))
-            result='<=10'
+            st.markdown('<=10')
         elif predictions[0] <= 36:
             st.write('# ' + chr(ord('A')+predictions[0]))
-            result='<=36'
+            st.markdown('<=36')
         else:
             st.write('# ' + chr(ord('a')+predictions[0]))
-            result='>36'
+            st.markdown('>36')
         st.image(image_resized)
