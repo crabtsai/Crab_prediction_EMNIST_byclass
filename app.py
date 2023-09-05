@@ -42,13 +42,11 @@ with col2:
         # class_names_3 = [chr(ord('a')+i) for i in range(26)]
         st.write("predict...")
         predictions = np.argmax(model.predict(X1), axis=-1)
+        st.write(predictions[0])
         if predictions[0] <= 10:
             st.write('# ' + chr(ord('0')+predictions[0]))
-            st.markdown(predictions[0])
         elif predictions[0] <= 36:
             st.write('# ' + chr(ord('A')+predictions[0]))
-            st.markdown(predictions[0])
         else:
             st.write('# ' + chr(ord('a')+predictions[0]))
-            st.markdown(predictions[0])
         st.image(image_resized)
