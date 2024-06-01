@@ -1,6 +1,8 @@
 streamlit
 streamlit-drawable-canvas
 numpy
+pandas==1.5.3
+protobuf==3.19.4 
 tensorflow-cpu==2.7.0 
-scikit-image
+scikit-learn==1.2.2
 
