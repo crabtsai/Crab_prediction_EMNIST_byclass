@@ -1,6 +1,6 @@
 streamlit
 streamlit-drawable-canvas
 numpy
-tensorflow-cpu
+tensorflow-cpu==2.7.0 
 scikit-image
 
